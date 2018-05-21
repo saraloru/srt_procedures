@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Pointing and Focus optimization &mdash; SRT procedures 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SRT procedures
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../before-obs.html">Important checks</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Continuum/index.html">Continuum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SpectroPol/index.html">Spectro-polarimetry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VLBI/index.html">VLBI</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Problems/index.html">Problems during the observations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Figures/index.html">Figures</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SRT procedures</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Pointing and Focus optimization</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/GeneralProcedures/pointing-focus.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<div class="section" id="pointing-and-focus-optimization">
+<span id="pointing-focus"></span><h1>Pointing and Focus optimization<a class="headerlink" href="#pointing-and-focus-optimization" title="Permalink to this headline">¶</a></h1>
+<p>$  : commands to insert in a shell</p>
+<p>&gt;  : commands to insert in the operatorInput panel</p>
+<p><img alt="logo" src="../_images/monocle_5.png" />: check on the monitor</p>
+<hr class="docutils" />
+<div class="section" id="pointing">
+<h2>Pointing<a class="headerlink" href="#pointing" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>The pointing optimization depends on the elevation of the sources. It is strongly
+recommended to perform it before observing a source (calibrators
+and target of your schedules).
+If the target you plan to observe is too weak to present a good S/N,
+select a calibrator bright enough and located close to your
+target (<a class="reference external" href="http://www.oa-cagliari.inaf.it/area.php?page_id=10&amp;skip=4">see the internal report N°27</a>.)</div></blockquote>
+<ol class="arabic">
+<li><p class="first">Set the azimuth and elevation offsets to 0 degree.</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">azelOffsets=0d,0d</span></code></p>
+</div></blockquote>
+</li>
+<li><p class="first">Choose and track a proper calibrator.</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">track=[name]</span></code>  if the calibrator is in the SRT database
+(e.g. 3c147 =&gt; note <strong>c</strong> in lower case)</p>
+<p>otherwise  <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">sidereal=[name],[RA],[Dec],[epoch],[sector]</span></code></p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">RA,</span> <span class="pre">Dec</span></code>: Pay attention to the coordinate formats:
+- decimal degrees, using a <strong>d</strong> suffix, for any coordinate (e.g. 30.00d)
+- sexagesimal degrees, with no suffix, for any coordinate (30:00:00)
+- hh:mm:ss, with a <strong>h</strong> suffix, for longitudes only (02:00:00h).</li>
+<li><code class="docutils literal"><span class="pre">epoch</span></code>: 1950, 2000 or -1, the last one meaning that the
+provided coordinates are precessed to the observing epoch.</li>
+<li><code class="docutils literal"><span class="pre">sector</span></code>: to force the cable wrap sector, if needed. Its value
+can be CW, CCW or neutral. Usually, use <em>neutral</em>.</li>
+</ul>
+<blockquote>
+<div><p>e.g. <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">sidereal=3c84,03:19:48.16h,41:30:42.1,2000,neutral</span></code>
+or   <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">sidereal=3c84,49.951d,41.512d,2000,neutral</span></code></p>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p class="first">Choose the recorder :</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">chooseRecorder=MANAGEMENT/CalibrationTool</span></code></p>
+</div></blockquote>
+</li>
+<li><p class="first">Open the calibrationtool client in a terminal to display the plots in real time :</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">$</span> <span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span></code>  <img alt="logo" src="../_images/monocle_5.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span>Fig.14</span></a></p>
+</div></blockquote>
+</li>
+<li><p class="first">Set proper parameters according to your beamsize and coordinate frame in order to perform a correct pointing measurement :</p>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">crossScan=HOR,0.5d,00:00:20</span></code></p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">HOR</span></code> or <code class="docutils literal"><span class="pre">EQ</span></code> frame: use the same coordinate frame as in the .lis of
+the schedule otherwise the  offsets will be rejected.</li>
+<li><code class="docutils literal"><span class="pre">0.5d</span></code> indicates the scan length in degrees (in this example 0.5°)</li>
+<li><code class="docutils literal"><span class="pre">00:00:20</span></code> indicates the duration of the scan (in this example: 20 seconds).</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Look at the calibrationtool client to check the pointing offsets.</p>
+<blockquote>
+<div><p>Pointing offsets must be less than 1/10 of the beamsize (i.e. about &lt; 0.005
+deg in C-band and &lt; 0.00125 deg in K-band).</p>
+</div></blockquote>
+</li>
+<li><p class="first">If you want to reject the measured offsets :</p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">azelOffsets=0d,0d</span></code></p>
+<p>and repeat the pointing scan procedure.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="focus">
+<h2>Focus<a class="headerlink" href="#focus" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Set proper parameters according to your beamsize :</p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">focusScan=150,00:01:00</span></code></p>
+<blockquote>
+<div><p>The first number should be three times the wavelength of
+observation in mm (e.g. in C-Band 3*5cm = 150mm).</p>
+</div></blockquote>
+</li>
+<li><p class="first">Look at the calibrationtool client to check the focus measurements.</p>
+<blockquote>
+<div><p>The focus is correct if you see a Gaussian with an offset lower
+than a few tenth of  mm with respect to the zero.</p>
+</div></blockquote>
+</li>
+<li><p class="first">If you want to reject the updated focus position with:</p>
+<p><code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">clearServoOffsets</span></code></p>
+<p>and repeat the focus scan procedure.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Observation modes}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Continuum}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}C-band}{3}{subsection.1.1.1}
+\contentsline {subsubsection}{Total Power}{3}{subsubsection*.3}
+\contentsline {paragraph}{Before observing}{3}{paragraph*.4}
+\contentsline {subparagraph}{On nuraghe-mng}{3}{subparagraph*.5}
+\contentsline {subparagraph}{On nuraghe-obs1}{3}{subparagraph*.6}
+\contentsline {paragraph}{Start the observations}{4}{paragraph*.7}
+\contentsline {paragraph}{Check during the observations}{5}{paragraph*.8}
+\contentsline {paragraph}{Getting your data}{12}{paragraph*.9}
+\contentsline {paragraph}{End of the session}{12}{paragraph*.10}
+\contentsline {subparagraph}{On nuraghe-obs1}{12}{subparagraph*.11}
+\contentsline {subparagraph}{Block the axes of the antenna}{12}{subparagraph*.12}
+\contentsline {subsubsection}{SARDARA}{12}{subsubsection*.13}
+\contentsline {paragraph}{Before observing}{12}{paragraph*.14}
+\contentsline {subparagraph}{On nuraghe-mng}{12}{subparagraph*.15}
+\contentsline {subparagraph}{On nuraghe-obs1}{13}{subparagraph*.16}
+\contentsline {paragraph}{Start the observations}{13}{paragraph*.17}
+\contentsline {paragraph}{Getting your data}{14}{paragraph*.18}
+\contentsline {paragraph}{End of the session}{14}{paragraph*.19}
+\contentsline {subparagraph}{On nuraghe-obs1}{14}{subparagraph*.20}
+\contentsline {subparagraph}{Block the axes of the antenna}{14}{subparagraph*.21}
+\contentsline {subsection}{\numberline {1.1.2}K-band}{15}{subsection.1.1.2}
+\contentsline {subsubsection}{Total Power}{15}{subsubsection*.22}
+\contentsline {paragraph}{Before observing}{15}{paragraph*.23}
+\contentsline {subparagraph}{On nuraghe-mng}{15}{subparagraph*.24}
+\contentsline {subparagraph}{On nuraghe-obs1}{15}{subparagraph*.25}
+\contentsline {paragraph}{Start the observations}{15}{paragraph*.26}
+\contentsline {paragraph}{Getting your data}{17}{paragraph*.27}
+\contentsline {paragraph}{End of the session}{17}{paragraph*.28}
+\contentsline {subparagraph}{On nuraghe-obs1}{17}{subparagraph*.29}
+\contentsline {subparagraph}{Block the axes of the antenna}{17}{subparagraph*.30}
+\contentsline {subsubsection}{SARDARA}{17}{subsubsection*.31}
+\contentsline {paragraph}{Before observing}{17}{paragraph*.32}
+\contentsline {subparagraph}{On nuraghe-mng}{17}{subparagraph*.33}
+\contentsline {subparagraph}{On nuraghe-obs1}{18}{subparagraph*.34}
+\contentsline {paragraph}{Start the observations}{18}{paragraph*.35}
+\contentsline {paragraph}{Getting your data}{19}{paragraph*.36}
+\contentsline {paragraph}{End of the session}{19}{paragraph*.37}
+\contentsline {subparagraph}{On nuraghe-obs1}{20}{subparagraph*.38}
+\contentsline {subparagraph}{Block the axes of the antenna}{20}{subparagraph*.39}
+\contentsline {subsection}{\numberline {1.1.3}L-band}{20}{subsection.1.1.3}
+\contentsline {subsubsection}{Total Power}{20}{subsubsection*.40}
+\contentsline {paragraph}{Before observing}{20}{paragraph*.41}
+\contentsline {subparagraph}{On nuraghe-mng}{20}{subparagraph*.42}
+\contentsline {subparagraph}{On nuraghe-obs1}{20}{subparagraph*.43}
+\contentsline {paragraph}{Start the observations}{21}{paragraph*.44}
+\contentsline {paragraph}{Getting your data}{22}{paragraph*.45}
+\contentsline {paragraph}{End of the session}{22}{paragraph*.46}
+\contentsline {subparagraph}{On nuraghe-obs1}{22}{subparagraph*.47}
+\contentsline {subparagraph}{Block the axes of the antenna}{22}{subparagraph*.48}
+\contentsline {subsubsection}{SARDARA}{22}{subsubsection*.49}
+\contentsline {paragraph}{Before observing}{22}{paragraph*.50}
+\contentsline {subparagraph}{On nuraghe-mng}{23}{subparagraph*.51}
+\contentsline {subparagraph}{On nuraghe-obs1}{23}{subparagraph*.52}
+\contentsline {paragraph}{Start the observations}{23}{paragraph*.53}
+\contentsline {paragraph}{Getting your data}{24}{paragraph*.54}
+\contentsline {paragraph}{End of the session}{25}{paragraph*.55}
+\contentsline {subparagraph}{On nuraghe-obs1}{25}{subparagraph*.56}
+\contentsline {subparagraph}{Block the axes of the antenna}{25}{subparagraph*.57}
+\contentsline {section}{\numberline {1.2}Spectral lines}{25}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}C-band}{25}{subsection.1.2.1}
+\contentsline {subsubsection}{SARDARA}{25}{subsubsection*.58}
+\contentsline {paragraph}{Before observing}{25}{paragraph*.59}
+\contentsline {subparagraph}{On nuraghe-mng}{25}{subparagraph*.60}
+\contentsline {subparagraph}{On nuraghe-obs1}{26}{subparagraph*.61}
+\contentsline {paragraph}{Start the observations}{26}{paragraph*.62}
+\contentsline {paragraph}{Getting your data}{27}{paragraph*.63}
+\contentsline {paragraph}{End of the session}{27}{paragraph*.64}
+\contentsline {subparagraph}{On nuraghe-obs1}{27}{subparagraph*.65}
+\contentsline {subparagraph}{Block the axes of the antenna}{27}{subparagraph*.66}
+\contentsline {subsubsection}{Xarcos}{28}{subsubsection*.67}
+\contentsline {paragraph}{Before observing}{28}{paragraph*.68}
+\contentsline {subparagraph}{On nuraghe-mng}{28}{subparagraph*.69}
+\contentsline {subparagraph}{On nuraghe-obs1}{28}{subparagraph*.70}
+\contentsline {paragraph}{Start the observations}{28}{paragraph*.71}
+\contentsline {paragraph}{Getting your data}{29}{paragraph*.72}
+\contentsline {paragraph}{End of the session}{29}{paragraph*.73}
+\contentsline {subparagraph}{On nuraghe-obs1}{29}{subparagraph*.74}
+\contentsline {subparagraph}{Block the axes of the antenna}{30}{subparagraph*.75}
+\contentsline {subsection}{\numberline {1.2.2}K-band}{30}{subsection.1.2.2}
+\contentsline {subsubsection}{SARDARA}{30}{subsubsection*.76}
+\contentsline {paragraph}{Before observing}{30}{paragraph*.77}
+\contentsline {subparagraph}{On nuraghe-mng}{30}{subparagraph*.78}
+\contentsline {subparagraph}{On nuraghe-obs1}{30}{subparagraph*.79}
+\contentsline {paragraph}{Start the observations}{31}{paragraph*.80}
+\contentsline {paragraph}{Getting your data}{32}{paragraph*.81}
+\contentsline {paragraph}{End of the session}{32}{paragraph*.82}
+\contentsline {subparagraph}{On nuraghe-obs1}{32}{subparagraph*.83}
+\contentsline {subparagraph}{Block the axes of the antenna}{32}{subparagraph*.84}
+\contentsline {subsubsection}{Xarcos}{33}{subsubsection*.85}
+\contentsline {paragraph}{Before observing}{33}{paragraph*.86}
+\contentsline {subparagraph}{On nuraghe-mng}{33}{subparagraph*.87}
+\contentsline {subparagraph}{On nuraghe-obs1}{33}{subparagraph*.88}
+\contentsline {paragraph}{Start the observations}{33}{paragraph*.89}
+\contentsline {paragraph}{Getting your data}{35}{paragraph*.90}
+\contentsline {paragraph}{End of the session}{35}{paragraph*.91}
+\contentsline {subparagraph}{On nuraghe-obs1}{35}{subparagraph*.92}
+\contentsline {subparagraph}{Block the axes of the antenna}{35}{subparagraph*.93}
+\contentsline {subsection}{\numberline {1.2.3}L-band}{35}{subsection.1.2.3}
+\contentsline {subsubsection}{SARDARA}{35}{subsubsection*.94}
+\contentsline {paragraph}{Before observing}{35}{paragraph*.95}
+\contentsline {subparagraph}{On nuraghe-mng}{36}{subparagraph*.96}
+\contentsline {subparagraph}{On nuraghe-obs1}{36}{subparagraph*.97}
+\contentsline {paragraph}{Start the observations}{36}{paragraph*.98}
+\contentsline {paragraph}{Getting your data}{37}{paragraph*.99}
+\contentsline {paragraph}{End of the session}{38}{paragraph*.100}
+\contentsline {subparagraph}{On nuraghe-obs1}{38}{subparagraph*.101}
+\contentsline {subparagraph}{Block the axes of the antenna}{38}{subparagraph*.102}
+\contentsline {section}{\numberline {1.3}Pulsar observations}{38}{section.1.3}
+\contentsline {chapter}{\numberline {2}Indices and tables}{39}{chapter.2}

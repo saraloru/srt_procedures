@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Important checks &mdash; SRT procedures 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SRT procedures
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../before-obs.html">Important checks</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Continuum/index.html">Continuum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SpectroPol/index.html">Spectro-polarimetry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../VLBI/index.html">VLBI</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Problems/index.html">Problems during the observations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Figures/index.html">Figures</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SRT procedures</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Important checks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/GeneralProcedures/before-obs.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<div class="section" id="important-checks">
+<span id="before-obs"></span><h1>Important checks<a class="headerlink" href="#important-checks" title="Permalink to this headline">¶</a></h1>
+<p>Some checks need to be performed before starting the observations.</p>
+<div class="section" id="on-nuraghe-mng">
+<h2>On nuraghe-mng<a class="headerlink" href="#on-nuraghe-mng" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Check that :</dt>
+<dd><ul class="first last simple">
+<li>all of the <strong>31 containers</strong> are active on ACS (MNG virtual desktop) (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-acs"><span>Fig.1</span></a>);</li>
+<li>the <strong>active surface</strong> is green on the AS virtual desktop (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-activesurface"><span>Fig.2</span></a>);</li>
+<li>the log client <strong>jlog</strong> is open in order to track possible error
+messages (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-jlog"><span>Fig.3</span></a>). In case it is not open, type <code class="docutils literal"><span class="pre">$</span>
+<span class="pre">jlog</span> <span class="pre">&amp;</span></code> on a shell;</li>
+<li>the interface of the <strong>Meteo client</strong> is open to check the wind
+velocity in real time (&lt; 50 km/h) (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-meteo"><span>Fig.4</span></a>). If it is
+close, type <code class="docutils literal"><span class="pre">$</span> <span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on a shell.</li>
+</ul>
+</dd>
+</dl>
+<dl class="docutils">
+<dt>Check the presence of the 8 panels (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-vistaglobale"><span>Fig.5</span></a>):</dt>
+<dd><ul class="first last simple">
+<li><strong>operatorInput</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-operatorinput"><span>Fig.6</span></a>)</li>
+<li><strong>AntennaBoss</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-antennaboss"><span>Fig.7</span></a>)</li>
+<li><strong>GenericBackend</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span>Fig.8</span></a>)</li>
+<li><strong>Mount</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount-ok"><span>Fig.9</span></a>)</li>
+<li><strong>Observatory</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-observatory"><span>Fig.10</span></a>)</li>
+<li><strong>Receivers</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-receivers"><span>Fig.11</span></a>)</li>
+<li><strong>Scheduler</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span>Fig.12</span></a>)</li>
+<li><strong>MinorServo</strong> (<a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-minorservo"><span>Fig.13</span></a>)</li>
+</ul>
+</dd>
+</dl>
+<p><strong>Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:</strong></p>
+<blockquote>
+<div><p><em>From your computer:</em></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">scp</span>&nbsp; <span class="pre">[schedulename.*]</span> <span class="pre">gavino&#64;nuraghe-mng:/archive/schedules/[projectID]</span></code></p>
+<p><em>On nuraghe-mng:</em></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">/archive/schedules/[projectID]</span></code></p>
+<p><code class="docutils literal"><span class="pre">$</span> <span class="pre">scheduleChecker</span> <span class="pre">[schedulename.scd]</span></code></p>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

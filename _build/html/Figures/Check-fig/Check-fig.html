@@ -1,0 +1,423 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ACS Command Center &mdash; SRT procedures 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="next" title="Error messages" href="../Err-fig/index.html" />
+    <link rel="prev" title="Check figures" href="index.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> SRT procedures
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../before-obs.html">Important checks</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Continuum/index.html">Continuum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SpectroPol/index.html">Spectro-polarimetry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../VLBI/index.html">VLBI</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Problems/index.html">Problems during the observations</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Figures</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Check panels</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">ACS Command Center</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#active-surface">Active Surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logging-display">Logging Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#meteo-client">Meteo Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nuraghe-obs1">Nuraghe-obs1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#operatorinput">OperatorInput</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#antennaboss">AntennaBoss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#genericbackend">GenericBackend</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mount">Mount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#observatory">Observatory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#receiversboss">ReceiversBoss</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scheduler">Scheduler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#minorservo">MinorServo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calibration-tool-client">Calibration tool client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#genericbackendx">GenericBackendX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#primary-control-panel-acu">Primary Control Panel ACU</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Err-fig/index.html">Error messages</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SRT procedures</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Figures</a> &raquo;</li>
+        
+          <li><a href="index.html">Check figures</a> &raquo;</li>
+        
+      <li>ACS Command Center</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Figures/Check-fig/Check-fig.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<div class="section" id="acs-command-center">
+<span id="check-fig"></span><h1>ACS Command Center<a class="headerlink" href="#acs-command-center" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id1">
+<span id="srt-acs"></span><img alt="../../_images/srt_acs.png" src="../../_images/srt_acs.png" />
+<p class="caption"><span class="caption-number">Fig.1 </span><span class="caption-text">The <strong>ACS</strong> monitor shows the state of the containers related to each DISCOS component.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="active-surface">
+<h1>Active Surface<a class="headerlink" href="#active-surface" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id2">
+<span id="srt-activesurface"></span><img alt="../../_images/srt_activesurface.png" src="../../_images/srt_activesurface.png" />
+<p class="caption"><span class="caption-number">Fig.2 </span><span class="caption-text">This monitor shows the status of the actuators in a graphical representation of the <strong>Active Surface</strong> and its configuration.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="logging-display">
+<h1>Logging Display<a class="headerlink" href="#logging-display" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id3">
+<span id="srt-jlog"></span><img alt="../../_images/srt_jlog.png" src="../../_images/srt_jlog.png" />
+<p class="caption"><span class="caption-number">Fig.3 </span><span class="caption-text">The <strong>Logging Display</strong> shows the log messages related to
+the observation. New messages are shown on top of the
+previous ones.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="meteo-client">
+<h1>Meteo Client<a class="headerlink" href="#meteo-client" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="srt-meteo">
+<img alt="../../_images/srt_meteo.png" src="../../_images/srt_meteo.png" />
+</div>
+<p>The <strong>Meteo Client</strong> window shows the atmospheric temperature
+and the wind parameters (including wind direction) using a
+graphic  interface.</p>
+</div></blockquote>
+</div>
+<div class="section" id="nuraghe-obs1">
+<h1>Nuraghe-obs1<a class="headerlink" href="#nuraghe-obs1" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id4">
+<span id="srt-vistaglobale"></span><img alt="../../_images/srt_vistaglobale.png" src="../../_images/srt_vistaglobale.png" />
+<p class="caption"><span class="caption-number">Fig.5 </span><span class="caption-text"><strong>Nuraghe-obs1</strong> is the destination for your schedules, and is the machine where you run the system and
+where you should find the  input terminal and all the monitors.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="operatorinput">
+<h1>OperatorInput<a class="headerlink" href="#operatorinput" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id5">
+<span id="srt-operatorinput"></span><img alt="../../_images/srt_operatorinput.png" src="../../_images/srt_operatorinput.png" />
+<p class="caption"><span class="caption-number">Fig.6 </span><span class="caption-text">In the <strong>input console</strong> the users can write Nuraghe commands. The prompt is just a sequential number enclosed in &lt;&gt;.
+If a command is properly read, the system replies repeating the command itself, followed by the operation results
+(if they are foreseen).</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="antennaboss">
+<h1>AntennaBoss<a class="headerlink" href="#antennaboss" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id6">
+<span id="srt-antennaboss"></span><img alt="../../_images/srt_antennaboss.png" src="../../_images/srt_antennaboss.png" />
+<p class="caption"><span class="caption-number">Fig.7 </span><span class="caption-text">The <strong>AntennaBoss</strong> monitor shows the target info, indicating the commanded and actual positions pointed by
+the antenna. It also gives a feedback on the pointing
+accuracy and on the overall antenna status.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="genericbackend">
+<h1>GenericBackend<a class="headerlink" href="#genericbackend" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id7">
+<span id="srt-genericbackend"></span><img alt="../../_images/srt_genericBackend.png" src="../../_images/srt_genericBackend.png" />
+<p class="caption"><span class="caption-number">Fig.8 </span><span class="caption-text">The monitor <strong>GenericBackend</strong> shows the backend setup parameters related to each section.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="mount">
+<h1>Mount<a class="headerlink" href="#mount" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id8">
+<span id="srt-mount-ok"></span><img alt="../../_images/srt_mount.png" src="../../_images/srt_mount.png" />
+<p class="caption"><span class="caption-number">Fig.9 </span><span class="caption-text">Observers must focus only on the <strong>Mount</strong> status and on the online readouts for the Azimuth and Elevation axes,
+compared to the commanded positions, located in the top left section.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="observatory">
+<h1>Observatory<a class="headerlink" href="#observatory" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id9">
+<span id="srt-observatory"></span><img alt="../../_images/srt_observatory.png" src="../../_images/srt_observatory.png" />
+<p class="caption"><span class="caption-number">Fig.10 </span><span class="caption-text">The <strong>Observatory</strong> monitor shows the station coordinates and times.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="receiversboss">
+<h1>ReceiversBoss<a class="headerlink" href="#receiversboss" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id10">
+<span id="srt-receivers"></span><img alt="../../_images/srt_receivers.png" src="../../_images/srt_receivers.png" />
+<p class="caption"><span class="caption-number">Fig.11 </span><span class="caption-text">The <strong>ReceiverBoss</strong> monitor summarizes the frontend setup parameters.
+The bottom part is devoted to the derotator (dewar positioner),  when available.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="scheduler">
+<h1>Scheduler<a class="headerlink" href="#scheduler" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id11">
+<span id="srt-scheduler"></span><img alt="../../_images/srt_scheduler.png" src="../../_images/srt_scheduler.png" />
+<p class="caption"><span class="caption-number">Fig.12 </span><span class="caption-text">The <strong>Scheduler</strong> monitor shows details on the selected data acquisition devices and on the running schedule, if any.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="minorservo">
+<h1>MinorServo<a class="headerlink" href="#minorservo" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id12">
+<span id="srt-minorservo"></span><img alt="../../_images/srt_minorservo.png" src="../../_images/srt_minorservo.png" />
+<p class="caption"><span class="caption-number">Fig.13 </span><span class="caption-text">The <strong>MinorServo</strong> monitor shows the current setup code and the minor servo status and movement.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="calibration-tool-client">
+<h1>Calibration tool client<a class="headerlink" href="#calibration-tool-client" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id13">
+<span id="srt-calibrationtool"></span><img alt="../../_images/calibrationtool_cut.png" src="../../_images/calibrationtool_cut.png" />
+<p class="caption"><span class="caption-number">Fig.14 </span><span class="caption-text">In the <strong>Calibration tool client</strong> window the subscan
+currently being acquired is shown in real-time (upper
+plot), even if in a low-resoltution. In the lower plot, the
+last completed subscan - in its full sampling - is
+shown. We can read the information about the pointing
+of focus offsets (peakoffsets), the beam size (HPBW), etc.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="genericbackendx">
+<h1>GenericBackendX<a class="headerlink" href="#genericbackendx" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id14">
+<span id="srt-backendxarcos"></span><img alt="../../_images/generic-backend-Xarcos.png" src="../../_images/generic-backend-Xarcos.png" />
+<p class="caption"><span class="caption-number">Fig.15 </span><span class="caption-text">A second <strong>GenericBackend</strong> panel shows the setup
+parameters of each section of Xarcos.</span></p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="primary-control-panel-acu">
+<h1>Primary Control Panel ACU<a class="headerlink" href="#primary-control-panel-acu" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><div class="figure align-center" id="id15">
+<span id="srt-acu-green"></span><img alt="../../_images/srt_ACU_green.png" src="../../_images/srt_ACU_green.png" />
+<p class="caption"><span class="caption-number">Fig.16 </span><span class="caption-text">Primary Control Panel ACU.</span></p>
+</div>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Err-fig/index.html" class="btn btn-neutral float-right" title="Error messages" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Check figures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, E. Egron, M. Pilia, S. Loru.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

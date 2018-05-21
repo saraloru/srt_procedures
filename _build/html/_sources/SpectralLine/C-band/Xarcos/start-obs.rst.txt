@@ -1,0 +1,72 @@
+.. SRT procedures documentation master file, created by
+   sphinx-quickstart on Mon Aug  7 16:44:28 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+.. toctree::
+   :maxdepth:1
+  
+.. _start-SLCXa:
+
+Start the observations
+======================
+
+$ : commands to insert in a shell   
+ 
+> : commands to insert in the operatorInput panel
+
+
+#. Insert your project number :
+
+    ``> project=[projectID]``
+
+#. Initial setup :
+
+    ``> antennaReset``
+
+    ``> setupCCB``
+
+
+#. Select the active surface shape (Shaped configuration for C-band
+ observations) :
+
+    ``> asSetup=S``
+
+#. Insert the Local Oscillator value in MHz :
+
+    ``> setLO=[freq]``
+
+#. Select and configure the XARCOS backend in C-band :
+
+    ``> chooseBackend=BACKENDS/XBackends``
+
+    ``$ genericBackendTui BACKENDS/XBackends``
+
+    ``> initialize=XC00``
+
+
+#. The ``initialize`` command, which is also inserted in the
+ schedule (.bck) directly, sets all XARCOS parameters such as frequency,
+ bandwidth and sample rate. You can check that the backend parameters
+ are correct in the BACKENDS/XBackends Tui [[FIGURA]], or modify them by using, i.e., the following command:
+
+    ``> setSection=[sect],[startFreq],[bw],*,*, [sampleRate],*``
+
+    with :
+
+      - ``[sect]``: 0 in full-Stokes observations ;
+      - ``[startFreq]`` corresponds to the initial frequency in the
+        125-250 MHz range from the LO value ;
+      - ``[bw]`` the bandwidth : 125.0, 62.5, 31.25, 15.625, 7.8125,
+        3.90625, 1.953125, 0.9765625 or 0.48828125 MHz ; 
+      - ``[sampleRate]``: in MHz, must be twice the bandwidth.
+      - ``*`` : indicates the number of feeds, polarization mode and
+        frequency channels, respectively. Let the asterix (``*``) for
+        Xarcos observations.
+
+
+
+#. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
+
+    ``> startSchedule=[projectID]/[schedulename].scd,[N]``

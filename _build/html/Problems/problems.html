@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Problem identification &mdash; SRT procedures 1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="SRT procedures 1 documentation" href="../index.html"/>
+        <link rel="up" title="&lt;no title&gt;" href="index.html"/>
+        <link rel="next" title="Figures" href="../Figures/index.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> SRT procedures
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../Continuum/index.html">Continuum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SpectroPol/index.html">Spectro-polarimetry</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Problem identification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#panels">Panels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jlog">Jlog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#acs">ACS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#meteoclient">MeteoClient</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#unresolved-problems">Unresolved problems</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Figures/index.html">Figures</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">SRT procedures</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">&lt;no title&gt;</a> &raquo;</li>
+      
+    <li>Problem identification</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/Problems/problems.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="problem-identification">
+<h1>Problem identification<a class="headerlink" href="#problem-identification" title="Permalink to this headline">¶</a></h1>
+<p>Depending on the problem, you can be able to resolve it.
+The first thing is to identify the origin of the error.</p>
+<p>Check the presence of error messages on the different panels, the jlog
+and ACS.</p>
+<div class="section" id="panels">
+<h2>Panels<a class="headerlink" href="#panels" title="Permalink to this headline">¶</a></h2>
+<p>The error messages usually come out in red.</p>
+<ul class="simple">
+<li><strong>Scheduler</strong></li>
+</ul>
+<p><a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-scheduler"><span>The scheduler status is in FAILURE !!!!!!!!</span></a> when the schedule is not running
+correctly. If the Scan/SubScan number is proceeding correctly, the
+FAILURE can be associated with skipped scans because of the too high
+elevation of the source (&gt; 85°).</p>
+<p><strong>Solution</strong>: stop the schedule with  <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">stopSchedule</span></code> and
+check the elevation of the target with <a class="reference external" href="http://www.ira.inaf.it/Observing/castia/site/index.php">CASTIA</a>.
+Then start again the schedule with <code class="docutils literal"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N]</span></code> when the target is visible.</p>
+</div>
+<div class="section" id="jlog">
+<h2>Jlog<a class="headerlink" href="#jlog" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="acs">
+<h2>ACS<a class="headerlink" href="#acs" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="meteoclient">
+<h2>MeteoClient<a class="headerlink" href="#meteoclient" title="Permalink to this headline">¶</a></h2>
+<p>Check continuously the wind velocity using the <code class="docutils literal"><span class="pre">$&gt;</span> <span class="pre">meteoClient</span> <span class="pre">&amp;</span></code> on
+a shell of nuraghe-mng. <a class="reference internal" href="../Figures/Err-fig/Err-fig.html#srt-windspeed"><span>The antenna must be stowed immediately when the wind speed
+exceeds 60km/h.</span></a></p>
+</div>
+</div>
+<div class="section" id="unresolved-problems">
+<h1>Unresolved problems<a class="headerlink" href="#unresolved-problems" title="Permalink to this headline">¶</a></h1>
+<p>If you do not find the origin of the problem or the problem is too
+complex to be resolved, please contact the person in charge of the
+observations (observer&#8217;s friend).</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Figures/index.html" class="btn btn-neutral float-right" title="Figures" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, E. Egron, M. Pilia, S. Loru.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
